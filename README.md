@@ -1,5 +1,8 @@
 # hugo-landing-page
 
+> **Created by Antono**
+
+
 A simple landing page built with Hugo and Tailwind CSS
 
 > There's also an [11ty Version](https://github.com/ttntm/11ty-landing-page)
