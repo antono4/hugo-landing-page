@@ -1,58 +1,75 @@
-# hugo-landing-page
+<!-- README ini dihasilkan otomatis oleh workflow .github/workflows/generate-readme.yml -->
+<!-- Jangan edit manual; perubahan akan ditim pada run berikutnya. -->
 
-> **Created by Antono**
+<h1 align="center">Project 👋</h1>
 
+<p align="center">
+  <strong></strong>
+</p>
 
-A simple landing page built with Hugo and Tailwind CSS
+<p align="center">
+  <a href="https://github.com/antono4/hugo-landing-page"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-antono4/hugo-landing-page-blue?logo=github"></a>
+  <a href="https://antono4.github.io/hugo-landing-page/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Online-success?logo=githubpages"></a>
+  <img alt="Files" src="https://img.shields.io/badge/Files-53-informational">
+  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-08-13 13:10:43 WIB-lightgrey">
+</p>
 
-> There's also an [11ty Version](https://github.com/ttntm/11ty-landing-page)
+---
 
-## How to use this template
+## 📖 Tentang
 
-**Requirements:**
+Repository **`hugo-landing-page`** adalah situs web pribadi / portofolio yang diterbitkan melalui **GitHub Pages**. Situs utama berada di [`https://antono4.github.io/hugo-landing-page/`](https://antono4.github.io/hugo-landing-page/).
 
-1. Hugo (developed and tested with version 0.58.0)
-2. Tailwind CSS
-3. gulp
+## 🗂️ Struktur Proyek
 
-All other dependencies are either linked from a CDN or included in this repository.
+```
+hugo-landing-page/
+├── index.html          # Halaman utama (landing / portofolio)
+├── assets/             # Aset statis (css, js, img, vendor)
+├── forms/               # Form handler (PHP)
+└── layouts/              # layouts  ->  https://antono4.github.io/hugo-landing-page/layouts/
+```
 
-**Setup:**
+## 🌐 Sub-Proyek / Demo
 
-1. Fork, clone or download
-2. `cd` into the root folder
-3. run `npm install`
-4. run `npm run start`
-5. open a browser and go to `http://localhost:1313`
+Situs ini juga memuat beberapa sub-proyek (masing-masing punya `index.html` tersendiri):
 
-**Basic configuration:**
+| Folder | Demo Live | Keterangan |
+|--------|-----------|-----------|
+| [`layouts`](./layouts) | [https://antono4.github.io/hugo-landing-page/layouts/](https://antono4.github.io/hugo-landing-page/layouts/) | layouts |
 
-1. Hugo -> `./config.toml`
-2. Tailwind -> `./tailwind.config.js`
-3. Netlify -> `./netlify.toml`
+## 🛠️ Teknologi
 
-> For better development experience, please have a look at `./tailwind.config.js` and either disable `purge` or comment it - otherwise you'll have a very limited selection of Tailwind classes available.
+Berdasarkan isi repository, proyek ini menggunakan:
 
-Keep in mind that `page.css` can be re-built anytime via `gulp css` - no need to make changes to the generated files in `./static/css`.
+- `HTML`
+- `CSS`
+- `JavaScript`
 
-Please note that `gulp css` _does not_ include that `normalize.css` file used for the 2 regular pages (imprint, privacy).
+> Total **53 file** terdeteksi di repository.
 
-**Change Content:**
+## 🚀 Menjalankan Secara Lokal
 
-All page content is stored in `./content`.
+Karena ini situs statis (HTML/CSS/JS/PHP), cukup buka `index.html` di browser, atau jalankan server lokal:
 
-`./content/sections/` is where each section's content can be found.
+```bash
+# Tanpa dependency
+python3 -m http.server 8000
+# lalu buka http://localhost:8000
 
-The individual tile/card elements for the "Features" screen are stored in `./content/sections/features/`
+# atau dengan PHP (untuk form handler di forms/)
+php -S localhost:8000
+```
 
-**Change Templates/Layout:**
+## 📬 Kontak
 
-Page structure and templates are stored in `./layouts` and can be edited there.
+- GitHub: [antono4](https://github.com/antono4)
+- Situs: [https://antono4.github.io/hugo-landing-page/](https://antono4.github.io/hugo-landing-page/)
 
-Best have a look at `./layouts/_default/baseof.html` first to understand how it all comes together - the page itself is constructed from partials in `./layouts/partials` and each section has a corresponding template file stored in the folder `./layouts/partials/sections`.
+## 📄 Lisensi
 
-`index.html` in `./layouts` simply arranges everything, i.e. sections can be re-ordered/removed/... there.
+Lihat berkas [`LICENSE`](./LICENSE) untuk informasi lisensi.
 
-**Change images:**
+---
 
-Images are stored in `./static/img`; everything in there can be considered a placeholder that should eventually be replaced with your actual production images.
+<sub>README ini di-generate otomatis pada **2026-08-13 13:10:43 WIB** oleh GitHub Actions .</sub>
